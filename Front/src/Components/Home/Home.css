@@ -1,0 +1,106 @@
+/* Profile Section Styles */
+.profile-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1a1a1a;
+  padding: 50px;
+}
+
+.text-container {
+  max-width: 50%;
+}
+
+.welcome-text {
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+.main-title {
+  font-size: 48px;
+  color: white;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.main-title .highlight {
+  color: #ff007f; /* Highlighted color for the name */
+}
+
+.description {
+  font-size: 16px;
+  color: #999;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  max-width: 500px;
+}
+
+.icon-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-icons, .skill-icons {
+  text-align: center;
+}
+
+.social-icons p, .skill-icons p {
+  font-size: 12px;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+.social-icons ul, .skill-icons ul {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+}
+
+.icon {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-size: cover;
+  border-radius: 5px;
+  transition: transform 0.3s;
+}
+
+.icon:hover {
+  transform: scale(1.1);
+}
+
+/* Icon images placeholders */
+.fb-icon {
+  background-image: url('path_to_fb_icon');
+}
+
+.insta-icon {
+  background-image: url('path_to_insta_icon');
+}
+
+.linkedin-icon {
+  background-image: url('path_to_linkedin_icon');
+}
+
+.figma-icon {
+  background-image: url('path_to_figma_icon');
+}
+
+.xd-icon {
+  background-image: url('path_to_xd_icon');
+}
+
+.photoshop-icon {
+  background-image: url('path_to_photoshop_icon');
+}
+
+.image-container {
+  max-width: 40%;
+}
+
+.profile-image {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+}
