@@ -1,5 +1,6 @@
 import React from 'react';
 import './Home.css';
+import My_image from '../../assets/My_image.png'
 
 const Home: React.FC = () => {
   return (
@@ -7,15 +8,15 @@ const Home: React.FC = () => {
       <div className="text-container">
         <p className="welcome-text">WELCOME TO MY WORLD</p>
         <h1 className="main-title">
-          Hi, I’m <span className="highlight">Omor Rahman</span> <br />
-          a Professional UI/Ux Designer.
+          Hi, I’m <span className="highlight">Annick NIYUBAHWE</span> <br />
+          a Professional Web Developer.
         </h1>
         <p className="description">
-          I have been working since 2012. I am proficient in UI design, user experience, researcher, and web development.
+          I have been working since 2022. I am proficient in UI design, user experience, researcher, and web development.
         </p>
         <div className="icon-section">
           <div className="social-icons">
-            <p>FIND WITH ME</p>
+            <p>FIND ME</p>
             <ul>
               <li><a href="#facebook" className="icon fb-icon"></a></li>
               <li><a href="#instagram" className="icon insta-icon"></a></li>
@@ -33,7 +34,7 @@ const Home: React.FC = () => {
         </div>
       </div>
       <div className="image-container">
-        <img src="path_to_image" alt="Omor Rahman" className="profile-image" />
+        <img src={My_image} alt="Annick NIYUBAHWE" className="profile-image" />
       </div>
     </section>
   );
