@@ -34,7 +34,7 @@ const Home: React.FC = () => {
         </div>
       </div>
       <div className="image-container">
-        <img src={My_image} alt="Annick NIYUBAHWE" className="profile-image" />
+        <img src={My_image} alt="Annick NIYUBAHWE" className="My-image" />
       </div>
     </section>
   );

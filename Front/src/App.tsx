@@ -4,7 +4,8 @@ import About from "./Components/About/About";
 import Testimonials from "./Components/Testimonials/Testimonials";
 import Skills from "./Components/Skills/Skills";
 import Education from "./Components/Education/Education";
-
+import Projects from "./Components/Projects/Projects";
+import Contact from "./Components/Contact/Contact";
 
 function App() {
   return (
@@ -13,9 +14,10 @@ function App() {
       <Home />
       <About />
       <Skills />
+      <Projects />
       <Education />
-      
       <Testimonials />
+      <Contact />
     </>
   );
 }

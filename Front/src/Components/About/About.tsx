@@ -7,10 +7,7 @@ const About: React.FC = () => {
     <div id="About" className="profile-container">
       <div className="profile-card">
         <div className="profile-image">
-          <img
-            src={My_image}
-            alt="Profile"
-          />
+          <img src={My_image} alt="Profile" />
         </div>
         <div className="profile-text">
           <h2>Who I Am?</h2>
@@ -24,7 +21,12 @@ const About: React.FC = () => {
             design. I love to get new experiences and always learn from my
             surroundings.
           </p>
-          <button className="download-button">Download PDF</button>
+          <a
+            href="https://drive.google.com/uc?export=download&id=1NBPm6id5PddqDk_TQeoqbyZzGePLhBlo"
+            download="CV"
+          >
+            <button className="download-button">Download PDF</button>
+          </a>
         </div>
       </div>
     </div>
