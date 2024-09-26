@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Dots:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+.profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #1e1e1e;
+}
+
+.profile-card {
+  display: flex;
+  align-items: center;
+  background-color: #292929;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.profile-image{
+  border-radius: 10px 50% 50% 10px;
+  height: auto;
+  box-shadow: #ff007a;
+  width: 900px;
+}
+
+.profile-image img {
+  width: 300px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.profile-text {
+  font-family: "Playfair Display", serif;
+  color: #ffffff;
+  margin-left: 20px;
+  max-width: 700px;
+}
+
+.profile-text h2 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.profile-text p {
+  font-size: 1.25rem;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.download-button {
+  background-color: #ff007a;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 1s ease;
+}
+
+.download-button:hover {
+  background-color: #a90152;
+}

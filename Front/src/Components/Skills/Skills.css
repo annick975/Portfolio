@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
+
+.skills-section {
+  padding: 50px 0;
+  background-color: #1e1e1e;
+  text-align: center;
+}
+
+.skills-title {
+  font-size: 36px;
+  color: #ffffff;
+  margin-bottom: 40px;
+}
+
+.skills-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.skills-category {
+  background-color: #292929;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px;
+  width: 300px;
+  text-align: left;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.category-title {
+  color: #ff007a;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.skill {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.skill-info {
+  display: flex;
+  align-items: center;
+}
+
+.skill-icon {
+  font-size: 24px;
+  margin-right: 10px;
+  color: #ff007a;
+}
+
+.skill-name {
+  color: #ffffff;
+}
+
+.skill-bar {
+  background-color: #3e3e3e;
+  border-radius: 5px;
+  width: 150px;
+  height: 10px;
+  margin: 0 15px;
+}
+
+.skill-bar-fill {
+  background-color: #ff007a;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.skill-level {
+  color: #ffffff;
+  font-size: 14px;
+}

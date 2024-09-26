@@ -1,9 +1,34 @@
-import React from 'react'
+import React from "react";
+import My_image from "../../assets/My_image.png";
+import "./About.css";
 
-function About() {
+const About: React.FC = () => {
   return (
-    <div>About</div>
-  )
-}
+    <div id="About" className="profile-container">
+      <div className="profile-card">
+        <div className="profile-image">
+          <img
+            src={My_image}
+            alt="Profile"
+          />
+        </div>
+        <div className="profile-text">
+          <h2>Who I Am?</h2>
+          <p>
+            I am a website designer from London, with a strong focus in UI/UX
+            design. I love to get new experiences and always learn from my
+            surroundings.
+          </p>
+          <p>
+            I am a website designer from London, with a strong focus in UI/UX
+            design. I love to get new experiences and always learn from my
+            surroundings.
+          </p>
+          <button className="download-button">Download PDF</button>
+        </div>
+      </div>
+    </div>
+  );
+};
 
-export default About
+export default About;

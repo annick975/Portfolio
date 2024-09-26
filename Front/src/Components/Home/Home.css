@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Dots:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
 .profile-section {
   display: flex;
   justify-content: space-between;
@@ -9,17 +10,18 @@
 
 .text-container {
   max-width: 50%;
+  margin-left: 8rem;
 }
 
 .welcome-text {
-  font-family: "Lora", serif;
+  font-family: "Playfair Display", serif;
   font-size: 14px;
   color: #888;
   margin-bottom: 10px;
 }
 
 .main-title {
-  font-family: "Lora", serif;
+  font-family: "Playfair Display", serif;
   font-size: 48px;
   color: white;
   font-weight: bold;
@@ -27,16 +29,16 @@
 }
 
 .main-title .highlight {
-  color: #ff007f; 
+  color: #ff007f;
 }
 
 .description {
-  font-family: "Lora", serif;
+  font-family: "Playfair Display", serif;
   font-size: 2rem;
-  color: #999;
+  color: #bbbbbb;
   margin-top: 20px;
   margin-bottom: 40px;
-  max-width: 500px;
+  max-width: 650px;
 }
 
 .icon-section {
@@ -76,7 +78,6 @@
   transform: scale(1.1);
 }
 
-/* Icon images placeholders */
 .fb-icon {
   background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMwAAADACAMAAAB/Pny7AAAAY1BMVEUAAAD///+ysrLl5eUuLi6Xl5fa2tpWVlb8/Pyrq6uGhobx8fHV1dWampqdnZ1zc3OPj4/Ozs7CwsIiIiJcXFxiYmI0NDSlpaVRUVEdHR1HR0d9fX0ICAg5OTkoKChqamoXFxdYfXxXAAACn0lEQVR4nO3b0W6qQBSF4coUHRkUQRSVtvb9n/KceNGkpg4McWctyfrvTfYXkdFhfHtTSimllFJKKaWUUkoppZRSSkH6aqtis/6p2+yKvroeTscP9GSJXYqsLp0LfvGT9yEE979lWdfNujuhZxzXqStdWMTzixw95ph65/2A5BY/5rwbekteBnPuR1PoMYd6PIUck3CF0WOOWRKFGnNpEi3EmFXSx4Ubc0m30GLek68xYsx6goUVU4z6+vIamNZNsXBi9qkLDDOmmnSRcWL25TQLJaaaaKHELGeEWU21MGKmrP20mMkWQkw/J8yEb8u8mLRfyr/aoGe/rx25+gfnlne5Aj38fdsRGF+uu6I6rO5qj+jh7xv+yPimP73IRvng8u8LujfgUZ9Dv2T8Cj3i+Nqhm1mPnjChagBTowdMKR+4mV3QA6bUxTEOPV9S6ziGbo2PlsUxLXq+pAYwn+j5kopjwsusl7fiGPeOni8pYVgThjVhWBOGNWFYE4Y1YVgThjVhWJsVJr5v5s7o+f7o2mQPij8ECI9edgu0dbONjjwxD9pUyy0wqE01E0wNujuYYDLQ3cEE033PCFOAHkGbYK4Yiw3mMCNMQP19zgKzRD27tcDUqKdqFpjsa0aYHHU4yAIDO2xmgYEdqjHABNSaaYFxqDXTAlPC/nJugGlghzcMMNl+RpgOdgbVALNDWQwwHndA+/mYgDuI+nzMErbMGGBwy4wBpsFtqT8fk8EsBnvNQEy73fxdHv+/adjkD16I+/xHGnjYxPh85nGzenImDGvCsCYMa8KwJgxrwrAmDGvCsCYMa8KwJgxrwrAmDGvCsCYMa8KwJgxrwrAmDGvCsCYMa8KwJgxrwrAmDGvCsCYMa8KwJgxrwrAmDGvCPKF/+UMw08oaN1AAAAAASUVORK5CYII=");
 }
@@ -101,12 +102,14 @@
 }
 
 .image-container {
-  max-width: 40%;
+  max-width: 50%;
+  max-height: 50%;
+  margin-right: 15rem;
 }
 
 .profile-image {
+  border-radius: 10%;
   width: 100%;
-  height: 60%;
-  border-radius: 50%;
+  height: 600px;
   box-shadow: 0px 10px 20px rgba(122, 122, 122, 0.5);
 }

@@ -2,6 +2,7 @@ import React from "react";
 import "./Header.css";
 import logo from "../../assets/logo.svg";
 
+
 const Header: React.FC = () => {
   return (
     <header className="header-container">
@@ -10,13 +11,13 @@ const Header: React.FC = () => {
         <span className="logo-text">Annick</span>
       </div>
       <nav className="nav-links">
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Education</a>
-        <a href="#">Skills</a>
-        <a href="#">Projects</a>
-        <a href="#">Testimonials</a>
-        <a href="#">Contact</a>
+        <a href="#Home">Home</a>
+        <a href="#About">About</a>
+        <a href="#Education">Education</a>
+        <a href="#Skills">Skills</a>
+        <a href="#Projects">Projects</a>
+        <a href="#Testimonials">Testimonials</a>
+        <a href="#Contact">Contact</a>
       </nav>
     </header>
   );

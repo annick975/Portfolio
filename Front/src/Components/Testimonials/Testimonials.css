@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
+
+.testimonials-section {
+  text-align: center;
+  padding: 50px 0;
+  background-color: #1e1e1e;
+}
+
+.section-title {
+  color: #ffffff;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.sub-title {
+  color: #ff007a;
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+.testimonials-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.testimonial-card {
+  background-color: #292929;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  margin: 20px;
+  transition: transform 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-10px);
+}
+
+.testimonial-image img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.testimonial-name {
+  color: #ff007a;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.testimonial-name span {
+  color: #b0b0b0;
+}
+
+.testimonial-text {
+  color: #b0b0b0;
+  font-size: 16px;
+  line-height: 1.5;
+}

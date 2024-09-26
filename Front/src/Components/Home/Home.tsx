@@ -4,7 +4,7 @@ import My_image from '../../assets/My_image.png'
 
 const Home: React.FC = () => {
   return (
-    <section className="profile-section">
+    <section id='Home' className="profile-section">
       <div className="text-container">
         <p className="welcome-text">WELCOME TO MY WORLD</p>
         <h1 className="main-title">
