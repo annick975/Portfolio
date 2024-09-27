@@ -7,6 +7,7 @@ const About: React.FC = () => {
     <div id="About" className="profile-container">
       <div className="profile-card">
         <div className="profile-image">
+          
           <img src={My_image} alt="Profile" />
         </div>
         <div className="profile-text">

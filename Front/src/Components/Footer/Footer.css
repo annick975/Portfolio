@@ -1,0 +1,81 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.footer-container {
+  background-color: #1a1a1a;
+  color: #fff;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #444;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.footer-logo {
+  text-align: center;
+  margin-bottom: 20px;
+  margin-left: 60px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 180px;
+}
+
+.footer-links ul {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #bbb;
+}
+
+.footer-links ul li:hover {
+  color: #fff;
+  cursor: pointer;
+}
+
+.footer-social {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.social-icons {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.social-icons li a {
+  color: #bbb;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.social-icons li a:hover {
+  color: #fff;
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 12px;
+  color: #888;
+  margin-top: 20px;
+}

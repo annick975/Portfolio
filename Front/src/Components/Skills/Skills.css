@@ -29,7 +29,7 @@
 }
 
 .category-title {
-  color: #ff007a;
+  color: var(--primary-color);
   font-size: 20px;
   margin-bottom: 20px;
 }
@@ -49,7 +49,7 @@
 .skill-icon {
   font-size: 24px;
   margin-right: 10px;
-  color: #ff007a;
+  color:var(--primary-color);
 }
 
 .skill-name {
@@ -64,11 +64,6 @@
   margin: 0 15px;
 }
 
-.skill-bar-fill {
-  background-color: #ff007a;
-  height: 100%;
-  border-radius: 5px;
-}
 
 .skill-level {
   color: #ffffff;

@@ -1,10 +1,26 @@
 import React from "react";
+import {
+  SiLinux,
+  SiGnubash,
+  SiHtml5,
+  SiCss3,
+  SiJavascript,
+  SiTailwindcss,
+  SiBootstrap,
+  SiReact,
+  SiExpress,
+  SiMongodb,
+  SiPhp,
+  SiPython,
+  SiMysql,
+} from "react-icons/si";
+import { TbBrandGolang } from "react-icons/tb";
+import { FaJava, FaKey, FaLock, FaNetworkWired, FaNode } from "react-icons/fa";
 import "./Skills.css";
 
 interface Skill {
   name: string;
-  level: number;
-  icon: string;
+  icon: JSX.Element;
 }
 
 interface SkillCategory {
@@ -14,38 +30,37 @@ interface SkillCategory {
 
 const skillCategories: SkillCategory[] = [
   {
-    category: "UI/UX",
+    category: "Cybersecurity",
     skills: [
-      { name: "Figma", level: 90, icon: "🎨" },
-      { name: "Photoshop", level: 80, icon: "🖌️" },
-      { name: "Canva", level: 75, icon: "📐" },
-      { name: "Illustrator", level: 80, icon: "🖍️" },
+      { name: "Linux", icon: <SiLinux /> },
+      { name: "Bash Scripting", icon: <SiGnubash /> },
+      { name: "PKI", icon: <FaKey /> },
+      { name: "Penetration Testing", icon: <FaLock /> },
+      { name: "DNS Sec", icon: <FaNetworkWired /> },
     ],
   },
   {
     category: "Frontend Development",
     skills: [
-      { name: "HTML", level: 90, icon: "💻" },
-      { name: "CSS", level: 90, icon: "🎨" },
-      { name: "JavaScript", level: 90, icon: "📜" },
-      { name: "Tailwind", level: 90, icon: "🌬️" },
-      { name: "Bootstrap", level: 90, icon: "📦" },
-      { name: "React", level: 85, icon: "⚛️" },
-      { name: "Next.js", level: 85, icon: "🛠️" },
-      { name: "Vue", level: 60, icon: "🖼️" },
-      { name: "React Native", level: 50, icon: "📱" },
+      { name: "React", icon: <SiReact /> },
+      { name: "HTML", icon: <SiHtml5 /> },
+      { name: "CSS", icon: <SiCss3 /> },
+      { name: "Tailwind", icon: <SiTailwindcss /> },
+      { name: "Bootstrap", icon: <SiBootstrap /> },
+      { name: "JavaScript", icon: <SiJavascript /> },
     ],
   },
   {
     category: "Backend Development",
     skills: [
-      { name: "Node.js", level: 90, icon: "📦" },
-      { name: "Express.js", level: 90, icon: "🚀" },
-      { name: "MongoDB", level: 90, icon: "🍃" },
-      { name: "PHP", level: 86, icon: "🐘" },
-      { name: "Python", level: 75, icon: "🐍" },
-      { name: "MySQL", level: 90, icon: "💾" },
-      { name: "Java", level: 50, icon: "☕" },
+      { name: "Java", icon: <FaJava /> },
+      { name: "Python", icon: <SiPython /> },
+      { name: "MongoDB", icon: <SiMongodb /> },
+      { name: "Express.js", icon: <SiExpress /> },
+      { name: "Node.js", icon: <FaNode /> },
+      { name: "PHP", icon: <SiPhp /> },
+      { name: "MySQL", icon: <SiMysql /> },
+      { name: "Golang", icon: <TbBrandGolang /> },
     ],
   },
 ];
@@ -64,13 +79,6 @@ const Skills: React.FC = () => {
                   <span className="skill-icon">{skill.icon}</span>
                   <span className="skill-name">{skill.name}</span>
                 </div>
-                <div className="skill-bar">
-                  <div
-                    className="skill-bar-fill"
-                    style={{ width: `${skill.level}%` }}
-                  ></div>
-                </div>
-                <span className="skill-level">{skill.level}%</span>
               </div>
             ))}
           </div>

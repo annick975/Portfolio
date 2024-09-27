@@ -1,6 +1,7 @@
 import React from 'react';
 import './Education.css';
 import logo from "../../assets/RCA_logo.svg"
+import MGS_logo from "../../assets/MGS_logo.svg"
 
 const Education: React.FC = () => {
   return (
@@ -9,21 +10,23 @@ const Education: React.FC = () => {
       <div className="experience-cards">
         <div className="card">
           <div className="icon-container">
-            <img src={logo} alt="Frontend Developer" />
+            <img src={logo} alt="Rwanda Coding Academy" />
           </div>
-          <h2>Frontend Developer</h2>
+          <h2>Rwanda Coding Academy</h2>
           <p>
-            Assisted in the development of a web-based platform using React.js, enhancing interactivity.
+            2023-2026
           </p>
+          <p>"Advanced Diploma in Software Programming"</p>
         </div>
         <div className="card">
           <div className="icon-container">
-            <img src={logo} alt="UI & UX designer" />
+            <img src={MGS_logo} alt="UI & UX designer" className='mgs' />
           </div>
-          <h2>UI & UX designer</h2>
+          <h2>Maranyundo Girls School</h2>
           <p>
-            Assisted in the designing of a web-based platform using Figma, enhancing interactivity.
+            2020-2023
           </p>
+          <p>"Ordinary-level Certificate"</p>
         </div>
       </div>
     </div>

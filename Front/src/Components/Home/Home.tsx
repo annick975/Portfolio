@@ -2,6 +2,7 @@ import React from 'react';
 import './Home.css';
 import My_image from '../../assets/My_image.png'
 
+
 const Home: React.FC = () => {
   return (
     <section id='Home' className="profile-section">
