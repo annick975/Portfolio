@@ -5,8 +5,8 @@ const Contact: React.FC = () => {
   return (
     <div id='Contact' className="contact-container">
       <div className="form-section">
-        <h2>Just say Hello!</h2>
-        <p>Let us know more about you!</p>
+        <h2>Reach out!</h2>
+        <p>Feel free to send me a message</p>
         <form>
           <div className="input-group">
             <input type="text" placeholder="First Name" required />
@@ -28,10 +28,6 @@ const Contact: React.FC = () => {
         <p>Call Us: +62 81 334 61 00</p>
         <p>We are open from Monday - Friday</p>
         <p>08.00 am - 05.00 pm</p>
-        <div className="social-media">
-          <p>Follow Us</p>
-          <p>facebook instagram vimeo</p>
-        </div>
       </div>
     </div>
   );

@@ -35,19 +35,20 @@
 }
 
 .footer-links ul {
-  list-style: none;
   text-align: center;
   padding: 0;
+  list-style: none;
 }
 
 .footer-links ul li {
+  
   margin-bottom: 10px;
   font-size: 14px;
   color: #bbb;
 }
 
 .footer-links ul li:hover {
-  color: #fff;
+  color: var(--secondary-color);
   cursor: pointer;
 }
 
@@ -70,7 +71,7 @@
 }
 
 .social-icons li a:hover {
-  color: #fff;
+  color: var(--secondary-color);
 }
 
 .footer-bottom {

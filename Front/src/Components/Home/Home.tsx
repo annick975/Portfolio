@@ -9,21 +9,14 @@ const Home: React.FC = () => {
       <div className="text-container">
         <p className="welcome-text">WELCOME TO MY WORLD</p>
         <h1 className="main-title">
-          Hi, I’m <span className="highlight">Annick NIYUBAHWE</span> <br />
+          Meet <span className="highlight">Annick NIYUBAHWE</span> <br />
           a Professional Web Developer.
         </h1>
         <p className="description">
           I have been working since 2022. I am proficient in UI design, user experience, researcher, and web development.
         </p>
         <div className="icon-section">
-          <div className="social-icons">
-            <p>FIND ME</p>
-            <ul>
-              <li><a href="#facebook" className="icon fb-icon"></a></li>
-              <li><a href="#instagram" className="icon insta-icon"></a></li>
-              <li><a href="#linkedin" className="icon linkedin-icon"></a></li>
-            </ul>
-          </div>
+        <a href="#Contact"><button className='hire'>Hire Me</button></a>  
           <div className="skill-icons">
             <p>BEST SKILL ON</p>
             <ul>

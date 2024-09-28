@@ -2,8 +2,9 @@
 
 .skills-section {
   padding: 50px 0;
-  background-color: #1e1e1e;
+  background-color: #1a1a1a;
   text-align: center;
+  height: 800px;
 }
 
 .skills-title {
@@ -24,8 +25,11 @@
   padding: 20px;
   margin: 20px;
   width: 300px;
-  text-align: left;
+  text-align: center;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+.skills-category:hover {
+  transform: translateY(-20px);
 }
 
 .category-title {
@@ -56,13 +60,6 @@
   color: #ffffff;
 }
 
-.skill-bar {
-  background-color: #3e3e3e;
-  border-radius: 5px;
-  width: 150px;
-  height: 10px;
-  margin: 0 15px;
-}
 
 
 .skill-level {
