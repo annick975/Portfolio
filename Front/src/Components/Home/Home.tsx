@@ -1,28 +1,80 @@
-import React from 'react';
-import './Home.css';
-import My_image from '../../assets/My_image.png'
+import React, { useState, useEffect } from "react";
+import "./Home.css";
+import My_image from "../../assets/My_image.png";
+import { SiPython, SiReact } from "react-icons/si";
+import { FaJava } from "react-icons/fa";
 
+const phrases = [
+  "Web Developer.",
+  "Cybersecurity Advocate.",
+  "Fullstack Developer.",
+];
 
 const Home: React.FC = () => {
+  const [currentPhraseIndex, setCurrentPhraseIndex] = useState(0);
+  const [displayedText, setDisplayedText] = useState("");
+  const [deleting, setDeleting] = useState(false);
+  const [letterIndex, setLetterIndex] = useState(0);
+  const typingSpeed = 120;
+  const deletingSpeed = 100;
+  const pauseDuration = 70;
+
+  useEffect(() => {
+    const currentPhrase = phrases[currentPhraseIndex];
+
+    if (deleting) {
+      if (letterIndex > 0) {
+        setTimeout(
+          () => setDisplayedText(currentPhrase.slice(0, letterIndex - 1)),
+          deletingSpeed
+        );
+        setTimeout(() => setLetterIndex(letterIndex - 1), deletingSpeed);
+      } else {
+        setDeleting(false);
+        setCurrentPhraseIndex((prev) => (prev + 1) % phrases.length);
+      }
+    } else {
+      if (letterIndex < currentPhrase.length) {
+        setTimeout(
+          () => setDisplayedText(currentPhrase.slice(0, letterIndex + 1)),
+          typingSpeed
+        );
+        setTimeout(() => setLetterIndex(letterIndex + 1), typingSpeed);
+      } else {
+        setTimeout(() => setDeleting(true), pauseDuration);
+      }
+    }
+  }, [letterIndex, deleting, currentPhraseIndex]);
+
   return (
-    <section id='Home' className="profile-section">
+    <section id="Home" className="profile-section">
       <div className="text-container">
         <p className="welcome-text">WELCOME TO MY WORLD</p>
         <h1 className="main-title">
-          Meet <span className="highlight">Annick NIYUBAHWE</span> <br />
-          a Professional Web Developer.
+          Meet <span className="highlight">Annick NIYUBAHWE</span> <br />a{" "}
+          {displayedText}
         </h1>
         <p className="description">
-          I have been working since 2022. I am proficient in UI design, user experience, researcher, and web development.
+          I have been working since 2022. I am proficient in UI design, user
+          experience, research, and web development.
         </p>
         <div className="icon-section">
-        <a href="#Contact"><button className='hire'>Hire Me</button></a>  
+          <a href="#Contact">
+            <button className="hire">Hire Me</button>
+          </a>
           <div className="skill-icons">
             <p>BEST SKILL ON</p>
             <ul>
-              <li><a href="#figma" className="icon figma-icon"></a></li>
-              <li><a href="#xd" className="icon xd-icon"></a></li>
-              <li><a href="#photoshop" className="icon photoshop-icon"></a></li>
+              <SiReact className="icon" />
+              <FaJava className="icon" />
+              <SiPython className="icon" />
+
+              <li>
+                <a href="#xd" className="icon xd-icon"></a>
+              </li>
+              <li>
+                <a href="#photoshop" className="icon photoshop-icon"></a>
+              </li>
             </ul>
           </div>
         </div>
