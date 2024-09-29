@@ -5,9 +5,9 @@ import { SiPython, SiReact } from "react-icons/si";
 import { FaJava } from "react-icons/fa";
 
 const phrases = [
-  "Web Developer.",
-  "Cybersecurity Advocate.",
-  "Fullstack Developer.",
+  "Cybersecurity specialist.",
+  "Frontend Developer.",
+  "Backend Developer.",
 ];
 
 const Home: React.FC = () => {
@@ -55,8 +55,8 @@ const Home: React.FC = () => {
           {displayedText}
         </h1>
         <p className="description">
-          I have been working since 2022. I am proficient in UI design, user
-          experience, research, and web development.
+          I am dedicated to turning complex challenges into innovative solutions
+          in cybersecurity and software development. 
         </p>
         <div className="icon-section">
           <a href="#Contact">

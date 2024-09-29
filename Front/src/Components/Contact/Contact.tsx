@@ -1,5 +1,6 @@
 import React from 'react';
 import './Contact.css';
+import { FaPhone, FaLocationDot, FaBusinessTime } from "react-icons/fa6";
 
 const Contact: React.FC = () => {
   return (
@@ -22,12 +23,10 @@ const Contact: React.FC = () => {
       </div>
       <div className="contact-info">
         <h3>Contact Information</h3>
-        <p>77 Baker Street</p>
-        <p>Bondowoso, 87655</p>
-        <p>Indonesia</p>
-        <p>Call Us: +62 81 334 61 00</p>
-        <p>We are open from Monday - Friday</p>
-        <p>08.00 am - 05.00 pm</p>
+        <p><FaLocationDot className='fa' /> Kigali, Rwanda</p>
+       <p> <FaPhone className='fa'/> +250 788 999 619</p>
+        <p> <FaBusinessTime className='fa' /> Available anytime</p>
+        
       </div>
     </div>
   );
