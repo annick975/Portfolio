@@ -13,9 +13,11 @@
   font-family: Arial, sans-serif;
 }
 
+/* Footer content is displayed flex and aligned for larger screens */
 .footer-content {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   border-bottom: 1px solid #444;
   padding-bottom: 20px;
   margin-bottom: 20px;
@@ -31,7 +33,7 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  gap: 180px;
+  gap: 20rem;
 }
 
 .footer-links ul {
@@ -41,7 +43,6 @@
 }
 
 .footer-links ul li {
-  
   margin-bottom: 10px;
   font-size: 14px;
   color: #bbb;
@@ -63,9 +64,11 @@
   justify-content: center;
   gap: 20px;
 }
-.fas{
-padding-right: 20px;
+
+.fas {
+  padding-right: 20px;
 }
+
 .social-icons li a {
   color: #bbb;
   font-size: 18px;
@@ -81,4 +84,118 @@ padding-right: 20px;
   font-size: 12px;
   color: #888;
   margin-top: 20px;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Smaller devices like iPhone SE, Galaxy S8+ */
+@media screen and (max-width: 375px) {
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer-links ul {
+    margin-bottom: 10px;
+  }
+
+  .footer-logo {
+    margin-left: 0;
+  }
+
+  .footer-bottom {
+    font-size: 10px;
+  }
+
+  .social-icons {
+    gap: 10px;
+  }
+}
+
+/* For mid-sized phones like iPhone XR, Pixel 7 */
+@media screen and (max-width: 430px) {
+  .footer-links {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .footer-links ul li {
+    font-size: 13px;
+  }
+
+  .social-icons {
+    gap: 15px;
+  }
+
+  .footer-bottom {
+    font-size: 11px;
+  }
+}
+
+/* For larger phones like iPhone 12 Pro, Galaxy S20 Ultra */
+@media screen and (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .footer-links ul li {
+    font-size: 13px;
+  }
+
+  .social-icons {
+    gap: 20px;
+  }
+}
+
+/* iPad and tablets (768px to 1024px) */
+@media screen and (max-width: 1024px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-links {
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 50px;
+  }
+
+  .footer-logo {
+    margin-left: 0;
+  }
+
+  .footer-bottom {
+    font-size: 12px;
+  }
+}
+
+/* Foldables and large displays (1024px and up) */
+@media screen and (min-width: 1024px) {
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer-links ul li {
+    font-size: 14px;
+  }
+
+  .footer-logo {
+    margin-left: 60px;
+  }
+
+  .footer-bottom {
+    font-size: 12px;
+  }
 }

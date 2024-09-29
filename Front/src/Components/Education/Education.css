@@ -43,6 +43,9 @@
 .card:hover {
   transform: translateY(-10px); /* Slight lift effect on hover */
 }
+.mgs{
+  border-radius: 50%;
+}
 
 .icon-container {
   background-color: #aaaaaa;

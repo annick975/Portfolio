@@ -2,7 +2,7 @@
 
 :root {
   --primary-color: #d40244;
-  --secondary-color: #d4029c;
+  --secondary-color: #cd021a;
 }
 
 * {
@@ -10,4 +10,5 @@
 }
 a{
   text-decoration: none;
+  color: inherit;
 }

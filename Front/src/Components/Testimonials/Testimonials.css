@@ -80,7 +80,7 @@
 
 @media screen and (max-width: 480px) {
   .testimonials-section {
-    padding: 50px 10px; /* Adjust padding for smaller screens */
+    padding: 100px 10px; /* Adjust padding for smaller screens */
   }
 
   .section-title {

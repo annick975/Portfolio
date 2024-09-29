@@ -1,12 +1,14 @@
 .contact-container {
   background-color: #1a1a1a;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
-  padding: 200px;
+  padding: 100px;
   color: #fff;
-  height: 800px;
+  height: 100%;
 }
 
+/* Responsive form section */
 .form-section {
   width: 50%;
 }
@@ -30,7 +32,7 @@ form {
   display: flex;
   justify-content: space-between;
   margin-bottom: 10px;
-  padding: 10px;
+  padding: 10px 0;
 }
 
 input {
@@ -74,7 +76,8 @@ button:hover {
   border-radius: 10px;
   margin-top: 90px;
 }
-.fa{
+
+.fa {
   color: var(--primary-color);
   font-size: 18px;
 }
@@ -82,4 +85,126 @@ button:hover {
 h3 {
   color: var(--primary-color);
   font-size: 1.5em;
+}
+
+/* Media Queries for Responsiveness */
+
+/* iPhone SE (375px width) */
+@media screen and (max-width: 375px) {
+  .contact-container {
+    flex-direction: column;
+    padding: 30px;
+  }
+
+  .form-section, .contact-info {
+    width: 100%;
+  }
+
+  input {
+    width: 100%;
+  }
+}
+
+/* iPhone XR, iPhone 12 Pro, iPhone 14 Pro Max, Pixel 7 (414px to 430px width) */
+@media screen and (max-width: 430px) {
+  .contact-container {
+    flex-direction: column;
+    padding: 40px;
+  }
+
+  .form-section, .contact-info {
+    width: 100%;
+  }
+
+  input {
+    width: 100%;
+  }
+
+  textarea {
+    width: 100%;
+  }
+}
+
+/* Samsung Galaxy S8+ (360px width) */
+@media screen and (max-width: 360px) {
+  .contact-container {
+    padding: 20px;
+  }
+
+  .form-section, .contact-info {
+    width: 100%;
+  }
+
+  input, textarea {
+    width: 100%;
+  }
+}
+
+/* iPad Mini, iPad Air, iPad Pro (768px width and up) */
+@media screen and (max-width: 768px) {
+  .contact-container {
+    padding: 50px;
+    flex-direction: column;
+  }
+
+  .form-section, .contact-info {
+    width: 100%;
+  }
+
+  input, textarea {
+    width: 100%;
+  }
+}
+
+/* Surface Pro 7, Asus ZenBook Fold, Surface Duo, Galaxy Z Fold 5 (1024px width) */
+@media screen and (max-width: 1024px) {
+  .contact-container {
+    padding: 50px;
+  }
+
+  .form-section {
+    width: 60%;
+  }
+
+  .contact-info {
+    width: 35%;
+  }
+
+  input, textarea {
+    width: 100%;
+  }
+}
+
+/* Nest Hub, Nest Hub Max (600px to 1024px width) */
+@media screen and (max-width: 1024px) and (min-width: 600px) {
+  .contact-container {
+    padding: 50px;
+  }
+
+  .form-section {
+    width: 60%;
+  }
+
+  .contact-info {
+    width: 35%;
+  }
+
+  input, textarea {
+    width: 100%;
+  }
+}
+
+/* Samsung Galaxy A51/71, Galaxy S20 Ultra (412px width) */
+@media screen and (max-width: 412px) {
+  .contact-container {
+    padding: 30px;
+  }
+
+  .form-section, .contact-info {
+    width: 100%;
+  }
+
+  input, textarea {
+    width: 100%;
+  }
 }

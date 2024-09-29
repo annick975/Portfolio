@@ -13,7 +13,7 @@ const Footer: React.FC = () => {
         </div>
         <div className="footer-links">
           <ul>
-            <li>QUICK LINKS</li>
+            <p>QUICK LINKS</p>
             <a href="#Home">
               <li>Home</li>
             </a>
@@ -37,19 +37,14 @@ const Footer: React.FC = () => {
             </a>
           </ul>
           <ul>
-            <li>SERVICES</li>
+            <p>SERVICES</p>
             <li>Cybersecurity</li>
-            <li>Backend Dvelopment</li>
+            <li>Backend Development</li>
             <li>Frontend Development</li>
           </ul>
           <ul>
-            <li>LET 'S CHAT</li>
-            <li>WhatsApp</li>
-            <li>Instagram</li>
-            <li>LinkedIn</li>
-            <li>Facebook</li>
-            <li>Email</li>
-            <li>Discord</li>
+            <p>CURRENTLY WORKING AT</p>
+            <li><a href="https://www.hepo.rw/" target="_blank">HEPO</a></li>
           </ul>
         </div>
       </div>

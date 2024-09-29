@@ -10,8 +10,12 @@
 
 .projects-container h2 {
   padding-bottom: 70px;
-  font-size: 2.5rem; /* Adjust heading size for better visibility */
+  font-size: 2.2rem; /* Adjust heading size for better visibility */
   color: white; /* Ensure heading color stands out */
+}
+h1{
+  font-size: 2.8rem;
+  color: var(--primary-color);
 }
 
 .projects-list {

@@ -69,6 +69,7 @@
 
 /* Media Query for smaller screens */
 @media screen and (max-width: 768px) {
+ 
   .skills-title {
     font-size: 28px; /* Adjust title font size */
   }

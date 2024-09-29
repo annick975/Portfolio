@@ -14,7 +14,7 @@
   background-color: #212020;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 5px 10px var(--primary-color);
+  box-shadow: 0 5px 10px black;
   max-width: 100%; /* Allow the card to take the full width on smaller screens */
   flex-wrap: wrap; /* Allow wrapping of contents */
 }
@@ -67,8 +67,8 @@
 /* Media Query for smaller screens */
 @media screen and (max-width: 768px) {
   .profile-container {
-    height: auto; /* Allow height to adjust for content */
-  }
+    height: auto;
+   }
 
   .profile-card {
     flex-direction: column; /* Stack image and text vertically */
@@ -107,6 +107,9 @@
 
 /* Media Query for extra small screens */
 @media screen and (max-width: 480px) {
+  .profile-container {
+    height: auto;
+  }
   .profile-text h2 {
     font-size: 2rem; /* Further adjust font size */
   }

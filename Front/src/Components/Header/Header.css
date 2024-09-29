@@ -108,3 +108,59 @@
     gap: 10px;
   }
 }
+
+/* Media Query for Nest Hub */
+@media screen and (max-width: 1024px) and (min-width: 600px) {
+  /* Adjust font sizes and padding to fit Nest Hub screen */
+  .header-container {
+    padding: 10px 30px;
+  }
+
+  .logo {
+    width: 2.5rem;
+  }
+
+  .logo-text {
+    font-size: 1.8rem;
+  }
+
+  .nav-links {
+    gap: 20px;
+  }
+
+  .nav-links a {
+    font-size: 1.1rem;
+    padding: 0.5rem 0.8rem;
+  }
+
+  .nav-links.open {
+    max-height: 400px;
+  }
+
+  /* Adjust the hamburger for better visibility */
+  .hamburger {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+/* Additional responsiveness for smaller devices */
+@media screen and (max-width: 768px) {
+  .nav-links a {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .logo-text {
+    font-size: 1.6rem;
+  }
+
+  .nav-links a {
+    font-size: 0.9rem;
+  }
+
+  .nav-links {
+    gap: 10px;
+  }
+}

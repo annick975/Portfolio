@@ -11,9 +11,9 @@ import "./App.css";
 
 function App() {
   const projectNames = [
-    "Personal Portfolio Website",
-    "E-commerce Platform",
-    "AI Chatbot Application"
+    "VulSca: Vulnerability scanning tool",
+    "AGRIBS: Platform for farmers",
+    "MEDIX: AI-Powered Medical platform"
   ];
 
   return (

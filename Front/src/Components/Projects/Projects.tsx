@@ -10,6 +10,7 @@ const Projects: React.FC<ProjectCardProps> = ({ projectNames }) => {
   return (
     <>
       <div className="projects-container" id="Projects">
+        <h1>Projects</h1>
         <h2>What I've been doing so far...</h2>
         <div className="projects-list">
           {projectNames.map((name, index) => (
